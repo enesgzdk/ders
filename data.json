@@ -2,60 +2,324 @@
   "math111": {
     "title": "MATH 111: Mathematical Structures",
     "topics": [
-      { "id": "m111_1", "name": "1.1 Propositional Logic & Truth Tables", "exam": "MT1", "user": "done", "prof": false },
-      { "id": "m111_2", "name": "1.2 Logical Equivalence & Tautologies", "exam": "MT1", "user": "done", "prof": false },
-      { "id": "m111_3", "name": "1.3 Rules of Inference", "exam": "MT1", "user": "done", "prof": false },
-      { "id": "m111_4", "name": "1.4 Predicates & Quantifiers", "exam": "MT1", "user": "done", "prof": false },
-      { "id": "m111_5", "name": "2.1 Proofs: Direct & Contrapositive", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_6", "name": "2.1 Proofs: Contradiction", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_7", "name": "2.2 Mathematical Induction", "exam": "MT1", "user": "notstarted", "prof": true },
-      { "id": "m111_8", "name": "3.1 Sets & Subsets", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_9", "name": "3.2 Product Sets & Set Algebra", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_10", "name": "3.3 Unions & Intersections", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_11", "name": "4.1 Equivalence Relations", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_12", "name": "4.2 Order Relations", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_13", "name": "5.1 Functions: Compositions", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_14", "name": "5.2 Images & Inverse Images", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "m111_15", "name": "6. Cardinality & Infinite Sets", "exam": "Final", "user": "notstarted", "prof": false },
-      { "id": "m111_16", "name": "II. Algebra: Groups & Rings", "exam": "Final", "user": "notstarted", "prof": false }
+      {
+        "id": "m111_1",
+        "name": "1.1 Propositional Logic & Truth Tables",
+        "exam": "MT1",
+        "user": "inprogress",
+        "prof": false
+      },
+      {
+        "id": "m111_2",
+        "name": "1.2 Logical Equivalence & Tautologies",
+        "exam": "MT1",
+        "user": "done",
+        "prof": false
+      },
+      {
+        "id": "m111_3",
+        "name": "1.3 Rules of Inference",
+        "exam": "MT1",
+        "user": "done",
+        "prof": false
+      },
+      {
+        "id": "m111_4",
+        "name": "1.4 Predicates & Quantifiers",
+        "exam": "MT1",
+        "user": "done",
+        "prof": false
+      },
+      {
+        "id": "m111_5",
+        "name": "2.1 Proofs: Direct & Contrapositive",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_6",
+        "name": "2.1 Proofs: Contradiction",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_7",
+        "name": "2.2 Mathematical Induction",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": true
+      },
+      {
+        "id": "m111_8",
+        "name": "3.1 Sets & Subsets",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_9",
+        "name": "3.2 Product Sets & Set Algebra",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_10",
+        "name": "3.3 Unions & Intersections",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_11",
+        "name": "4.1 Equivalence Relations",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_12",
+        "name": "4.2 Order Relations",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_13",
+        "name": "5.1 Functions: Compositions",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_14",
+        "name": "5.2 Images & Inverse Images",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_15",
+        "name": "6. Cardinality & Infinite Sets",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m111_16",
+        "name": "II. Algebra: Groups & Rings",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      }
     ]
   },
   "math131": {
     "title": "MATH 131: Calculus",
     "topics": [
-      { "id": "m131_1", "name": "Review: Real Numbers & Functions", "exam": "MT", "user": "done", "prof": false },
-      { "id": "m131_2", "name": "Limits: Epsilon-Delta Definition", "exam": "MT", "user": "inprogress", "prof": false },
-      { "id": "m131_3", "name": "One-Sided Limits & Infinity", "exam": "MT", "user": "done", "prof": false },
-      { "id": "m131_4", "name": "Continuity & IVT", "exam": "MT", "user": "inprogress", "prof": true },
-      { "id": "m131_5", "name": "Derivative as Limit & Geometry", "exam": "MT", "user": "notstarted", "prof": false },
-      { "id": "m131_6", "name": "Differentiation Rules & Chain Rule", "exam": "MT", "user": "notstarted", "prof": false },
-      { "id": "m131_7", "name": "Implicit Diff & Related Rates", "exam": "MT", "user": "notstarted", "prof": false },
-      { "id": "m131_8", "name": "Rolle's Theorem & MVT", "exam": "MT", "user": "notstarted", "prof": false },
-      { "id": "m131_9", "name": "Max/Min & Curve Sketching", "exam": "MT", "user": "notstarted", "prof": false },
-      { "id": "m131_10", "name": "Definite Integral: Darboux/Riemann", "exam": "Final", "user": "notstarted", "prof": false },
-      { "id": "m131_11", "name": "Fundamental Theorem of Calculus", "exam": "Final", "user": "notstarted", "prof": false },
-      { "id": "m131_12", "name": "Integration Techniques", "exam": "Final", "user": "notstarted", "prof": false },
-      { "id": "m131_13", "name": "Applications of Integrals", "exam": "Final", "user": "notstarted", "prof": false }
+      {
+        "id": "m131_1",
+        "name": "Review: Real Numbers & Functions",
+        "exam": "MT",
+        "user": "done",
+        "prof": false
+      },
+      {
+        "id": "m131_2",
+        "name": "Limits: Epsilon-Delta Definition",
+        "exam": "MT",
+        "user": "inprogress",
+        "prof": false
+      },
+      {
+        "id": "m131_3",
+        "name": "One-Sided Limits & Infinity",
+        "exam": "MT",
+        "user": "done",
+        "prof": false
+      },
+      {
+        "id": "m131_4",
+        "name": "Continuity & IVT",
+        "exam": "MT",
+        "user": "inprogress",
+        "prof": true
+      },
+      {
+        "id": "m131_5",
+        "name": "Derivative as Limit & Geometry",
+        "exam": "MT",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m131_6",
+        "name": "Differentiation Rules & Chain Rule",
+        "exam": "MT",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m131_7",
+        "name": "Implicit Diff & Related Rates",
+        "exam": "MT",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m131_8",
+        "name": "Rolle's Theorem & MVT",
+        "exam": "MT",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m131_9",
+        "name": "Max/Min & Curve Sketching",
+        "exam": "MT",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m131_10",
+        "name": "Definite Integral: Darboux/Riemann",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m131_11",
+        "name": "Fundamental Theorem of Calculus",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m131_12",
+        "name": "Integration Techniques",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "m131_13",
+        "name": "Applications of Integrals",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      }
     ]
   },
   "phys101": {
     "title": "PHYS 101: Physics for Scientists",
     "topics": [
-      { "id": "p101_1", "name": "Ch 1: Vectors & Dimensional Analysis", "exam": "MT1", "user": "done", "prof": false },
-      { "id": "p101_2", "name": "Ch 2: 1D Kinematics with Calculus", "exam": "MT1", "user": "done", "prof": false },
-      { "id": "p101_3", "name": "Ch 4: 2D Kinematics & Projectiles", "exam": "MT1", "user": "done", "prof": false },
-      { "id": "p101_4", "name": "Ch 4: Circular Motion & Polar Coord.", "exam": "MT1", "user": "inprogress", "prof": false },
-      { "id": "p101_5", "name": "Ch 4: Relative Motion", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "p101_6", "name": "Ch 5: Newton's Laws & FBD", "exam": "MT1", "user": "notstarted", "prof": true },
-      { "id": "p101_7", "name": "Ch 6: Friction & Circular Dynamics", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "p101_8", "name": "Ch 6: Drag Force & Terminal Velocity", "exam": "MT1", "user": "notstarted", "prof": false },
-      { "id": "p101_9", "name": "Ch 7: Work and Kinetic Energy", "exam": "MT2", "user": "notstarted", "prof": false },
-      { "id": "p101_10", "name": "Ch 8: Conservation of Energy", "exam": "MT2", "user": "notstarted", "prof": false },
-      { "id": "p101_11", "name": "Ch 9: Linear Momentum & Collisions", "exam": "MT2", "user": "notstarted", "prof": false },
-      { "id": "p101_12", "name": "Ch 9: Center of Mass Systems", "exam": "MT2", "user": "notstarted", "prof": false },
-      { "id": "p101_13", "name": "Ch 10: Rotation & Moment of Inertia", "exam": "Final", "user": "notstarted", "prof": false },
-      { "id": "p101_14", "name": "Ch 10: Parallel-Axis Thm & Dynamics", "exam": "Final", "user": "notstarted", "prof": false },
-      { "id": "p101_15", "name": "Ch 11: Angular Momentum & Rolling", "exam": "Final", "user": "notstarted", "prof": false }
+      {
+        "id": "p101_1",
+        "name": "Ch 1: Vectors & Dimensional Analysis",
+        "exam": "MT1",
+        "user": "done",
+        "prof": false
+      },
+      {
+        "id": "p101_2",
+        "name": "Ch 2: 1D Kinematics with Calculus",
+        "exam": "MT1",
+        "user": "done",
+        "prof": false
+      },
+      {
+        "id": "p101_3",
+        "name": "Ch 4: 2D Kinematics & Projectiles",
+        "exam": "MT1",
+        "user": "done",
+        "prof": false
+      },
+      {
+        "id": "p101_4",
+        "name": "Ch 4: Circular Motion & Polar Coord.",
+        "exam": "MT1",
+        "user": "inprogress",
+        "prof": false
+      },
+      {
+        "id": "p101_5",
+        "name": "Ch 4: Relative Motion",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_6",
+        "name": "Ch 5: Newton's Laws & FBD",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": true
+      },
+      {
+        "id": "p101_7",
+        "name": "Ch 6: Friction & Circular Dynamics",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_8",
+        "name": "Ch 6: Drag Force & Terminal Velocity",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_9",
+        "name": "Ch 7: Work and Kinetic Energy",
+        "exam": "MT2",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_10",
+        "name": "Ch 8: Conservation of Energy",
+        "exam": "MT2",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_11",
+        "name": "Ch 9: Linear Momentum & Collisions",
+        "exam": "MT2",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_12",
+        "name": "Ch 9: Center of Mass Systems",
+        "exam": "MT2",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_13",
+        "name": "Ch 10: Rotation & Moment of Inertia",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_14",
+        "name": "Ch 10: Parallel-Axis Thm & Dynamics",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_15",
+        "name": "Ch 11: Angular Momentum & Rolling",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      }
     ]
   }
 }
