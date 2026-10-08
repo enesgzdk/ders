@@ -213,86 +213,85 @@
     ]
   },
   "phys101": {
-  "title": "PHYS 101: Physics for Scientists",
-  "topics": [
-    {
-      "id": "p101_1",
-      "name": "Ch 1: Dimensional Analysis, Vectors & Calculus",
-      "exam": "MT1",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_2",
-      "name": "Ch 2: Kinematics: 1D, 2D & Projectile Motion",
-      "exam": "MT1",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_3",
-      "name": "Ch 2: Polar Coordinates, Circular & Relative Motion",
-      "exam": "MT1",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_4",
-      "name": "Ch 3: Newton's Laws & Free-Body Diagrams",
-      "exam": "MT1",
-      "user": "notstarted",
-      "prof": true
-    },
-    {
-      "id": "p101_5",
-      "name": "Ch 3: Friction, Circular Dynamics & Resistive Forces",
-      "exam": "MT1",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_6",
-      "name": "Ch 4: Work, Kinetic Energy & Conservation of Energy",
-      "exam": "MT2",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_7",
-      "name": "Ch 5: Linear Momentum & Collisions",
-      "exam": "MT2",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_8",
-      "name": "Ch 5: Systems of Particles & Center of Mass",
-      "exam": "MT2",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_9",
-      "name": "Ch 6: Fixed-Axis Rotation, Moment of Inertia & //-Axis Thm",
-      "exam": "Final",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_10",
-      "name": "Ch 6: Rotational Dynamics & Rolling Motion",
-      "exam": "Final",
-      "user": "notstarted",
-      "prof": false
-    },
-    {
-      "id": "p101_11",
-      "name": "Ch 7: Angular Momentum & Conservation",
-      "exam": "Final",
-      "user": "notstarted",
-      "prof": false
-    }
-  ]
-}
-
+    "title": "PHYS 101: Physics for Scientists",
+    "topics": [
+      {
+        "id": "p101_1",
+        "name": "Ch 1: Dimensional Analysis, Vectors & Calculus",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_2",
+        "name": "Ch 2: Kinematics: 1D, 2D & Projectile Motion",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": true
+      },
+      {
+        "id": "p101_3",
+        "name": "Ch 2: Polar Coordinates, Circular & Relative Motion",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_4",
+        "name": "Ch 3: Newton's Laws & Free-Body Diagrams",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": true
+      },
+      {
+        "id": "p101_5",
+        "name": "Ch 3: Friction, Circular Dynamics & Resistive Forces",
+        "exam": "MT1",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_6",
+        "name": "Ch 4: Work, Kinetic Energy & Conservation of Energy",
+        "exam": "MT2",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_7",
+        "name": "Ch 5: Linear Momentum & Collisions",
+        "exam": "MT2",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_8",
+        "name": "Ch 5: Systems of Particles & Center of Mass",
+        "exam": "MT2",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_9",
+        "name": "Ch 6: Fixed-Axis Rotation, Moment of Inertia & //-Axis Thm",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_10",
+        "name": "Ch 6: Rotational Dynamics & Rolling Motion",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
+        "id": "p101_11",
+        "name": "Ch 7: Angular Momentum & Conservation",
+        "exam": "Final",
+        "user": "notstarted",
+        "prof": false
+      }
+    ]
+  }
 }
