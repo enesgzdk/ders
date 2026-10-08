@@ -5,14 +5,14 @@
       {
         "id": "m111_1",
         "name": "1.1 Propositional Logic & Truth Tables",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "inprogress",
         "prof": false
       },
       {
         "id": "m111_2",
         "name": "1.2 Logical Equivalence & Tautologies",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "inprogress",
         "prof": false
       },
@@ -26,77 +26,77 @@
       {
         "id": "m111_4",
         "name": "1.4 Predicates & Quantifiers",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "inprogress",
         "prof": false
       },
       {
         "id": "m111_5",
         "name": "2.1 Proofs: Direct & Contrapositive",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": false
       },
       {
         "id": "m111_6",
         "name": "2.1 Proofs: Contradiction",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": false
       },
       {
         "id": "m111_7",
         "name": "2.2 Mathematical Induction",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "m111_8",
-        "name": "3.1 Sets & Subsets",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": true
       },
       {
+        "id": "m111_8",
+        "name": "3.1 Sets & Subsets",
+        "exam": "MT",
+        "user": "notstarted",
+        "prof": false
+      },
+      {
         "id": "m111_9",
         "name": "3.2 Product Sets & Set Algebra",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": false
       },
       {
         "id": "m111_10",
         "name": "3.3 Unions & Intersections",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": false
       },
       {
         "id": "m111_11",
         "name": "4.1 Equivalence Relations",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": false
       },
       {
         "id": "m111_12",
         "name": "4.2 Order Relations",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": false
       },
       {
         "id": "m111_13",
         "name": "5.1 Functions: Compositions",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": false
       },
       {
         "id": "m111_14",
         "name": "5.2 Images & Inverse Images",
-        "exam": "MT1",
+        "exam": "MT",
         "user": "notstarted",
         "prof": false
       },
@@ -213,113 +213,86 @@
     ]
   },
   "phys101": {
-    "title": "PHYS 101: Physics for Scientists",
-    "topics": [
-      {
-        "id": "p101_1",
-        "name": "Ch 1: Vectors & Dimensional Analysis",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_2",
-        "name": "Ch 2: 1D Kinematics with Calculus",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_3",
-        "name": "Ch 4: 2D Kinematics & Projectiles",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_4",
-        "name": "Ch 4: Circular Motion & Polar Coord.",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_5",
-        "name": "Ch 4: Relative Motion",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_6",
-        "name": "Ch 5: Newton's Laws & FBD",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": true
-      },
-      {
-        "id": "p101_7",
-        "name": "Ch 6: Friction & Circular Dynamics",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_8",
-        "name": "Ch 6: Drag Force & Terminal Velocity",
-        "exam": "MT1",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_9",
-        "name": "Ch 7: Work and Kinetic Energy",
-        "exam": "MT2",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_10",
-        "name": "Ch 8: Conservation of Energy",
-        "exam": "MT2",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_11",
-        "name": "Ch 9: Linear Momentum & Collisions",
-        "exam": "MT2",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_12",
-        "name": "Ch 9: Center of Mass Systems",
-        "exam": "MT2",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_13",
-        "name": "Ch 10: Rotation & Moment of Inertia",
-        "exam": "Final",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_14",
-        "name": "Ch 10: Parallel-Axis Thm & Dynamics",
-        "exam": "Final",
-        "user": "notstarted",
-        "prof": false
-      },
-      {
-        "id": "p101_15",
-        "name": "Ch 11: Angular Momentum & Rolling",
-        "exam": "Final",
-        "user": "notstarted",
-        "prof": false
-      }
-    ]
-  }
+  "title": "PHYS 101: Physics for Scientists",
+  "topics": [
+    {
+      "id": "p101_1",
+      "name": "Ch 1: Dimensional Analysis, Vectors & Calculus",
+      "exam": "MT1",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_2",
+      "name": "Ch 2: Kinematics: 1D, 2D & Projectile Motion",
+      "exam": "MT1",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_3",
+      "name": "Ch 2: Polar Coordinates, Circular & Relative Motion",
+      "exam": "MT1",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_4",
+      "name": "Ch 3: Newton's Laws & Free-Body Diagrams",
+      "exam": "MT1",
+      "user": "notstarted",
+      "prof": true
+    },
+    {
+      "id": "p101_5",
+      "name": "Ch 3: Friction, Circular Dynamics & Resistive Forces",
+      "exam": "MT1",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_6",
+      "name": "Ch 4: Work, Kinetic Energy & Conservation of Energy",
+      "exam": "MT2",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_7",
+      "name": "Ch 5: Linear Momentum & Collisions",
+      "exam": "MT2",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_8",
+      "name": "Ch 5: Systems of Particles & Center of Mass",
+      "exam": "MT2",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_9",
+      "name": "Ch 6: Fixed-Axis Rotation, Moment of Inertia & //-Axis Thm",
+      "exam": "Final",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_10",
+      "name": "Ch 6: Rotational Dynamics & Rolling Motion",
+      "exam": "Final",
+      "user": "notstarted",
+      "prof": false
+    },
+    {
+      "id": "p101_11",
+      "name": "Ch 7: Angular Momentum & Conservation",
+      "exam": "Final",
+      "user": "notstarted",
+      "prof": false
+    }
+  ]
+}
+
 }
