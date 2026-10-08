@@ -379,8 +379,8 @@
                 <div class="cell-actions">
                   <select class="user-select" onchange="updateUserStatus('${courseKey}', '${topic.id}', this.value)">
                     <option value="notstarted" ${topic.user === 'notstarted' ? 'selected' : ''}>⚪ Başlamadım</option>
-                    <option value="inprogress" ${topic.user === 'inprogress' ? 'selected' : ''}>🟡 Çalışıyorum</option>
-                    <option value="done" ${topic.user === 'done' ? 'selected' : ''}>🟢 Tamam</option>
+                    <option value="inprogress" ${topic.user === 'inprogress' ? 'selected' : ''}>🟡 Orta</option>
+                    <option value="done" ${topic.user === 'done' ? 'selected' : ''}>🟢 iyi</option>
                   </select>
                   <button class="btn-prof ${topic.prof ? 'active' : ''}" onclick="toggleProfStatus('${courseKey}', '${topic.id}')">
                     ${topic.prof ? '📍 Hoca Burada' : 'Hoca İşaretle'}
