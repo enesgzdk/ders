@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Ders Takip</title>
+  <title>Ders Takip Paneli</title>
   <style>
     :root {
       --bg: #0b1120;
@@ -70,7 +70,6 @@
       color: var(--primary);
     }
 
-    /* Ders Satırı (Dikey Sıralama) */
     .course-row {
       margin-bottom: 28px;
     }
@@ -84,7 +83,6 @@
       gap: 10px;
     }
 
-    /* Sağa Doğru Kaydırılabilir Konu Şeridi */
     .topic-track {
       display: flex;
       gap: 14px;
@@ -103,7 +101,6 @@
       border-radius: 4px;
     }
 
-    /* Konu Kartı (Tablo Hücresi Gibi) */
     .topic-cell {
       flex: 0 0 240px;
       background: var(--card-bg);
@@ -182,7 +179,6 @@
       color: #f87171;
     }
 
-    /* Modal */
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -239,12 +235,11 @@
 
   <div id="board">Yükleniyor...</div>
 
-  <!-- Ayarlar Modal -->
   <div id="configModal" class="modal-overlay" style="display: none;">
     <div class="modal">
       <h2>GitHub Ayarları</h2>
       <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
-        Verilerin web üzerinden repoya kaydedilebilmesi için bilgilerinizi girin. Bu bilgiler yalnızca bu cihazın yerel belleğinde saklanır.
+        Bilgiler sadece bu tarayıcının hafızasında saklanır. Veriler izole <code>data</code> dalına yazılır; gereksiz deploy tetiklenmez.
       </p>
       <input type="text" id="cfgUser" placeholder="GitHub Kullanıcı Adı">
       <input type="text" id="cfgRepo" placeholder="Repo Adı (örn: ders-takip)">
@@ -257,6 +252,7 @@
   </div>
 
   <script>
+    const DATA_BRANCH = 'data'; // Verilerin tutulacağı izole dal
     let trackerData = null;
     let fileSha = null;
 
@@ -288,32 +284,24 @@
       loadData();
     }
 
-    // GitHub'dan data.json dosyasını çekme
+    // Veriyi 'data' dalından çek
     async function loadData() {
       const cfg = getStorageConfig();
       const statusEl = document.getElementById('syncText');
 
       if (!cfg.user || !cfg.repo) {
-        // Yapılandırma girilmediyse doğrudan repo kökünden okumayı dene
-        try {
-          const res = await fetch('data.json?v=' + Date.now());
-          trackerData = await res.json();
-          renderBoard();
-          statusEl.textContent = 'Görüntüleme Modu (Kayıt için ⚙️ Ayarlayın)';
-        } catch (e) {
-          statusEl.textContent = 'Veri okunamadı. ⚙️ Ayarları yapın.';
-        }
+        openConfigModal();
         return;
       }
 
       statusEl.textContent = 'Veriler alınıyor...';
-      const url = `https://api.github.com/repos/${cfg.user}/${cfg.repo}/contents/data.json`;
+      const url = `https://api.github.com/repos/${cfg.user}/${cfg.repo}/contents/data.json?ref=${DATA_BRANCH}`;
 
       try {
         const headers = cfg.token ? { 'Authorization': `Bearer ${cfg.token}` } : {};
         const res = await fetch(url, { headers, cache: 'no-store' });
         
-        if (!res.ok) throw new Error('Repo bulunamadı veya yetki hatası.');
+        if (!res.ok) throw new Error('Data dalında data.json bulunamadı veya yetki hatası.');
         
         const fileInfo = await res.json();
         fileSha = fileInfo.sha;
@@ -326,13 +314,12 @@
       }
     }
 
-    // GitHub'daki data.json dosyasını güncelleme
+    // Değişikliği sadece 'data' dalına kaydet (Deploy tetiklemez!)
     async function syncToGitHub() {
       const cfg = getStorageConfig();
       const statusEl = document.getElementById('syncText');
 
       if (!cfg.user || !cfg.repo || !cfg.token) {
-        alert('Değişikliklerin kaydedilmesi için lütfen ⚙️ butonundan GitHub bilgilerinizi ve Token girin.');
         openConfigModal();
         return;
       }
@@ -350,20 +337,20 @@
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            message: 'Update study progress via web panel',
+            message: 'Update progress [skip ci]',
             content: encodedContent,
-            sha: fileSha
+            sha: fileSha,
+            branch: DATA_BRANCH
           })
         });
 
-        if (!res.ok) throw new Error('Kaydedilemedi (SHA uyuşmazlığı veya izin hatası).');
+        if (!res.ok) throw new Error('Kayıt başarısız oldu.');
         
         const result = await res.json();
         fileSha = result.content.sha;
-        statusEl.textContent = 'Değişiklikler Repoya Kaydedildi ✓';
+        statusEl.textContent = 'Kaydedildi ✓';
       } catch (err) {
         statusEl.textContent = 'Kaydetme Hatası: ' + err.message;
-        // Çakışma durumunda en güncel veriyi tekrar çek
         setTimeout(loadData, 2000);
       }
     }
@@ -392,7 +379,7 @@
                 <div class="cell-actions">
                   <select class="user-select" onchange="updateUserStatus('${courseKey}', '${topic.id}', this.value)">
                     <option value="notstarted" ${topic.user === 'notstarted' ? 'selected' : ''}>⚪ Başlamadım</option>
-                    <option value="inprogress" ${topic.user === 'inprogress' ? 'selected' : ''}>🟡 Orta</option>
+                    <option value="inprogress" ${topic.user === 'inprogress' ? 'selected' : ''}>🟡 Çalışıyorum</option>
                     <option value="done" ${topic.user === 'done' ? 'selected' : ''}>🟢 Tamam</option>
                   </select>
                   <button class="btn-prof ${topic.prof ? 'active' : ''}" onclick="toggleProfStatus('${courseKey}', '${topic.id}')">
@@ -425,7 +412,6 @@
       }
     }
 
-    // Sayfa açıldığında başlat
     loadData();
   </script>
 </body>
